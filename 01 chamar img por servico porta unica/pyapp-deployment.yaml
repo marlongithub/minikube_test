@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pyappkube
+  labels:  # Adicione esta seção
+    app: pyapp
+spec:
+  containers:
+  - name: pyapp
+    image: 61513490168/pyapp:v1
+    ports:
+    - containerPort: 5000
